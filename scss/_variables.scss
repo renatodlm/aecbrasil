@@ -1,0 +1,41 @@
+$color_primary: #312783;
+$color_secondary: #009640;
+$color_green_light:#EFF4EF;
+$color_secondary_contrast: #ffffff;
+$color_black: #1c1c1c;
+$color_white: #ffffff;
+$color_red: #d82337;
+$color_yellow: #fbb03b;
+$color_dark: #2d392e;
+$color_border_bottom:rgba(100, 143, 98, 0.3);
+
+$color_primary_gradient: linear-gradient(to right, #004f9a 0%, #007eb3 100%);
+$color_primary_gradient_invert: linear-gradient(to left, #004f9a 0%, #007eb3 100%);
+
+$color_secondary_gradient: linear-gradient(to right, #e67a10 0%, #f9b706 100%);
+$color_secondary_gradient_invert: linear-gradient(to left, #e67a10 0%, #f9b706 100%);
+
+$color_text: #2A3A2D;
+$color_text_light: #555;
+$color_body: #ffffff;
+
+$color_bg_light: #eaf0f7;
+$color_bg_dark: #e4e9ee;
+$color_bg_header: #fff;
+$color_bg_footer: #1f1564;
+
+$color_success: #06be59;
+$color_danger: #ff5656;
+$color_warning: #fdd03d;
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+$font_primary: "Montserrat", sans-serif;
+$font_secondary: "Rajdhani", sans-serif;
+
+$border_radius: 4px;
+$border_radius_primary: 8px;
+$border_radius_secondary: 40px;
