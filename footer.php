@@ -15,38 +15,46 @@ $email = get_field('email', 'option');
 $endereco = get_field('endereco', 'option');
 
 ?>
+<?php
+$database = aec_get_associados_database();
 
+
+?>
+
+<pre>
+   <?php var_dump($database); ?>
+</pre>
 <footer id="footer" class="site-footer">
-    <div class="top-footer">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-xl-2 col-lg-3 col-md-2 footer-coluna">
-                    <?php
-                    $custom_logo_id = get_theme_mod('custom_logo');
-                    $logo = wp_get_attachment_image_src($custom_logo_id, 'logo');
-                    $logo_alt = get_field('logo_alternativo', 'option');
-                    $logo_largura = get_field('logo_largura', 'option');
-                    $logo_altura = get_field('logo_altura', 'option');
-                    if ($logo_alt) :
-                    ?>
-                        <a href="<?php echo get_home_url(); ?>"><img style="width:<?php echo $logo_largura . 'px'; ?>;height:<?php echo $logo_altura . 'px'; ?>" src="<?php echo $logo_alt['url']; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logo-alt"></a>
+   <div class="top-footer">
+      <div class="container">
+         <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-xl-2 col-lg-3 col-md-2 footer-coluna">
+               <?php
+               $custom_logo_id = get_theme_mod('custom_logo');
+               $logo = wp_get_attachment_image_src($custom_logo_id, 'logo');
+               $logo_alt = get_field('logo_alternativo', 'option');
+               $logo_largura = get_field('logo_largura', 'option');
+               $logo_altura = get_field('logo_altura', 'option');
+               if ($logo_alt) :
+               ?>
+                  <a href="<?php echo get_home_url(); ?>"><img style="width:<?php echo $logo_largura . 'px'; ?>;height:<?php echo $logo_altura . 'px'; ?>" src="<?php echo $logo_alt['url']; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logo-alt"></a>
 
-                    <?php
-                    elseif (has_custom_logo()) :
-                    ?>
-                        <a href="<?php echo get_home_url(); ?>"><img style="width:<?php echo $logo_largura . 'px'; ?>;height:<?php echo $logo_altura . 'px'; ?>" src="<?php echo $logo[0]; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logo"></a>
-                    <?php
-                    else :
-                    ?>
-                        <a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
-                    <?php
-                    endif;
-                    ?>
-                </div>
-
+               <?php
+               elseif (has_custom_logo()) :
+               ?>
+                  <a href="<?php echo get_home_url(); ?>"><img style="width:<?php echo $logo_largura . 'px'; ?>;height:<?php echo $logo_altura . 'px'; ?>" src="<?php echo $logo[0]; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" class="logo"></a>
+               <?php
+               else :
+               ?>
+                  <a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
+               <?php
+               endif;
+               ?>
             </div>
-        </div>
-    </div>
+
+         </div>
+      </div>
+   </div>
 
 </footer>
 
