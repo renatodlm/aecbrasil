@@ -15,15 +15,6 @@ $email = get_field('email', 'option');
 $endereco = get_field('endereco', 'option');
 
 ?>
-<?php
-$database = aec_get_associados_database();
-
-
-?>
-
-<pre>
-   <?php var_dump($database); ?>
-</pre>
 <footer id="footer" class="site-footer">
    <div class="top-footer">
       <div class="container">

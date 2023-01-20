@@ -24,8 +24,8 @@ class AEC_AECAssociados_Dashboard
    public function set_custom_fields()
    {
       add_menu_page(
-         esc_html__('AEC Associados', 'bora-investir'),
-         esc_html__('AEC Associados', 'bora-investir'),
+         esc_html__('AEC Associados', 'aecbrasil'),
+         esc_html__('AEC Associados', 'aecbrasil'),
          'manage_options',
          'aec-associados',
          'AEC_AECAssociados_Dashboard::aec_associados_main_menu',
@@ -43,7 +43,7 @@ class AEC_AECAssociados_Dashboard
 
 ?>
       <div class="wrap">
-         <h2><?php esc_html__('AEC Associados - CSV', 'bora-investir'); ?></h2>
+         <h2><?php esc_html__('AEC Associados - CSV', 'aecbrasil'); ?></h2>
          <?php
 
          settings_errors();

@@ -25,11 +25,11 @@ class AEC_AECAssociados_Fields
    {
       add_settings_field(
          'aec_associados_database',
-         esc_html__('AEC Associados .CSV', 'bora-investir'),
+         esc_html__('AEC Associados .CSV', 'aecbrasil'),
          'AEC_AECAssociados_Fields::aec_associados_database_callback',
          'aec_associados-geral-section-slug',
          'page_1_section',
-         array(esc_html__('Importe um arquivo CSV da base de dados.', 'bora-investir')),
+         array(esc_html__('Importe um arquivo CSV da base de dados.', 'aecbrasil')),
       );
 
       register_setting(
@@ -58,8 +58,8 @@ class AEC_AECAssociados_Fields
                // if ($column_count !== 7)
                //    continue;
 
-               if (in_array(null, $csv_data))
-                  continue;
+               // if (in_array(null, $csv_data))
+               //    continue;
 
                array_push($aec_associados_database, $csv_data);
             }
@@ -99,10 +99,10 @@ class AEC_AECAssociados_Fields
 
       if (!empty($current_version) && $current_version >= 1)
       {
-         echo '<p><strong>' . esc_html__('Versão Atual:', 'bora-investir') . ' ' . $current_version . '</strong></p>';
+         echo '<p><strong>' . esc_html__('Versão Atual:', 'aecbrasil') . ' ' . $current_version . '</strong></p>';
          return;
       }
 
-      echo '<p><strong>' . esc_html__('Nenhuma versão cadastrada.', 'bora-investir') . '</strong></p>';
+      echo '<p><strong>' . esc_html__('Nenhuma versão cadastrada.', 'aecbrasil') . '</strong></p>';
    }
 }
