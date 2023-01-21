@@ -55,7 +55,7 @@ class AEC_AECAssociados_Dashboard
             if ($active_tab === 'geral')
             {
                settings_fields('aec_associados-geral-setting-group');
-               do_settings_sections('aec_associados-geral-section-slug');
+               do_settings_sections('aec_associados_geral_section_slug');
             }
 
             submit_button();

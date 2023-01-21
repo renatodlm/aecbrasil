@@ -23,21 +23,23 @@ class AEC_AECAssociados_Fields
 
    public static function aec_associados_init_fields_options()
    {
+
       add_settings_field(
          'aec_associados_database',
-         esc_html__('AEC Associados .CSV', 'aecbrasil'),
+         'AEC Associados .CSV',
          'AEC_AECAssociados_Fields::aec_associados_database_callback',
-         'aec_associados-geral-section-slug',
+         'aec_associados_geral_section_slug',
          'page_1_section',
-         array(esc_html__('Importe um arquivo CSV da base de dados.', 'aecbrasil')),
+         array(
+            'Importe um arquivo CSV da base de dados.' // $args for callback
+         )
       );
-
       register_setting(
          'aec_associados-geral-setting-group',
          'aec_associados_database'
       );
 
-      register_setting("aec_associados-geral-setting-group", "aec_associados_database", "AEC_AECAssociados_Fields::handle_file_upload");
+      register_setting("aec_associados_geral_section_slug", "aec_associados_database", "AEC_AECAssociados_Fields::handle_file_upload");
    }
 
    public static function handle_file_upload($option)

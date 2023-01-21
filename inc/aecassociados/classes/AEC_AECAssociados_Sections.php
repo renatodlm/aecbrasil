@@ -27,7 +27,7 @@ class AEC_AECAssociados_Sections
          'page_1_section',
          esc_html__('Configurações gerais', 'aecbrasil'),
          'AEC_AECAssociados_Sections::page_1_section_callback',
-         'aec_associados-geral-section-slug'
+         'aec_associados_geral_section_slug'
       );
    }
 
