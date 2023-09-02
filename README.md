@@ -1,3 +1,18 @@
+
+# AEC Brasil
+
+Tema projeto para WordPress personalizado.
+
+## 🚀 Sobre mim
+Eu sou uma pessoa desenvolvedora full-stack...
+
+## Stack utilizada
+
+**Front-end:** HTML5, CSS3, SCSS, Bootstrap, JS
+
+**Back-end:** PHP, NODE
+
+
 Tema base para criação de sites com ACF
 
 Passos para instalação do tema no ambiente de desenvolvimento:
